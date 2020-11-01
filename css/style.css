@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+
+
+.box1{
+	position: absolute;
+	width: 15%;
+	top: 0%;
+	left: 0%;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: scale(0.7,0.7);
+	animation-name: go_one;
+	animation-duration: 5s;	
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite;
+}
+
+.box2{
+	position: absolute;
+	top: 27%;
+	left: 65%;
+	width: 23%;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: scale(1,1);
+	animation-duration: 5s;	
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite;
+}
+
+.box2:hover{
+	background-image: url('png/ssmf.png');
+	transform:scale(1.2,1.2);
+	animation-play-state: running;
+}
+.box3{
+	position: absolute;
+	width: 15%;
+	left: -20%;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: scale(0.7,0.7);
+	animation-name: go_one;
+	animation-delay: 2s;
+	animation-duration: 5s;	
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite;
+}
+.box4{
+	position: absolute;
+	width: 15%;
+	left: -20%;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: scale(0.7,0.7);
+	animation-name: go_one;
+	animation-delay: 3s;
+	animation-duration: 5s;	
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite;
+}
+
+@keyframes go_one{
+	0%{
+		left: 0%; top: 65%;
+	}
+	15%{
+		left: 15%; top: 85%;
+		
+	}
+	30%{
+		left: 30%; top: 65%;
+		
+	}
+	45%{
+		left: 45%; top: 85%;
+	}
+	60%{
+		left: 60%; top: 65%;
+		
+	}
+	75%{
+		left: 75%; top: 85%;	
+	}
+	90%{
+		left: 90%; top: 65%;	
+	}
+	100%{
+		left: 100%; top: 85%;
+	}
